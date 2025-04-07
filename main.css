@@ -27,4 +27,14 @@ body {
 
 .cards {
     display: flex;
+    /*Khi dùng display: flex, giá trị mặc định của align-items: stretch; nên nó sẽ làm cho các cột cao bằng nhau */
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    width: 25%;
+    margin-left: 30px;
+
 }
