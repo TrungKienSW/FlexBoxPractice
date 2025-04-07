@@ -1,0 +1,30 @@
+/* CSS Reset của Eric Meyer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    /*dòng này để set kích thước hình ảnh có chiều rộng tối đa bằng phần tử chứa nó, nếu không có ảnh quá lớn có thể gây tràn màn hình */
+}
+
+body {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+}
