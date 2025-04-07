@@ -73,10 +73,27 @@ body {
 .card-user-info {
     padding-left: 20px;
     flex: 1;
+    /* dòng này để thẻ này có chiếm hết toàn bộ diện tích còn lại trong flex box */
 }
 
-.card-user-top {}
+.card-user-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
 
-.card-user-name {}
+.card-user-top i {
+    color: #20e35a;
+    margin-left: 5px;
+}
 
-.card-user-game {}
+.card-user-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.card-user-game {
+    color: #999;
+    font-weight: 500;
+}
