@@ -67,9 +67,13 @@ body {
     object-fit: cover;
     border-radius: 100rem;
     flex-shrink: 0;
+    /* dòng này cố định kích thước 40px x 40px không bị co lại khi dàn flex box*/
 }
 
-.card-user-info {}
+.card-user-info {
+    padding-left: 20px;
+    flex: 1;
+}
 
 .card-user-top {}
 
