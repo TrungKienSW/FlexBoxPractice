@@ -178,4 +178,11 @@ body {
 /* Fix trường hợp người dùng nhập tên title là các chữ dính nhau dài nó sẽ xuống dòng cho mik khi hết độ dài dùng word-break ví dụ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 .card-title {
     word-break: break-all;
+    display: -webkit-box;
+    /* những dòng dưới giới hạn nội dung chỉ cho nhập nội dung có độ dài 3 dòng nếu dài quá nó sẽ hiện 3 chấm ... */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
