@@ -39,6 +39,8 @@ body {
     width: calc(25% - 30px);
     /* Dòng này để chia các card mỗi card chiếm vị trí đều nhau trên màn hình do chúng ta có 4 card trừ đi 30px của margin left */
     margin-left: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
 .card-image {
@@ -141,4 +143,16 @@ body {
 .card-content {
     /* background-color: #20e35a; */
     flex: 1;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Fix để card-bottom luôn nằm dưới đều nhau giữa các card */
+.card-bottom {
+    margin-top: auto;
+    /* dòng này để đẩy phần bottom của card-content luôn nằm dưới cùng đều nhau giữa các card */
 }
