@@ -162,7 +162,7 @@ body {
 
 /* ####################################################################################################################### */
 
-/* Fix để card user luôn đều nhau */
+/* Fix để card-user luôn đều nhau (bao gồm cả độ dài card-top bằng nhau và card-user đều nhau giống 2 phần như trên*/
 .card-top {
     display: flex;
     flex-direction: column;
