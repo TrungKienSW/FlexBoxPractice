@@ -151,8 +151,25 @@ body {
 
 }
 
+/* ####################################################################################################################### */
+
 /* Fix để card-bottom luôn nằm dưới đều nhau giữa các card */
 .card-bottom {
     margin-top: auto;
     /* dòng này để đẩy phần bottom của card-content luôn nằm dưới cùng đều nhau giữa các card */
+    flex-shrink: 0;
+}
+
+/* ####################################################################################################################### */
+
+/* Fix để card user luôn đều nhau */
+.card-top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-user {
+    margin-top: auto;
+    flex-shrink: 0;
 }
