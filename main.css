@@ -47,7 +47,7 @@ body {
     object-fit: cover;
 }
 
-.card-content {
+.card-top {
     padding: 25px;
 }
 
@@ -96,4 +96,33 @@ body {
 .card-user-game {
     color: #999;
     font-weight: 500;
+}
+
+.card-bottom {
+    padding: 25px;
+    border-top: 2px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-live {
+    color: white;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.card-live span {
+    margin-left: 10px;
+}
+
+.card-watching {
+    font-size: 15px;
+    font-weight: 500;
+    color: #999;
+
 }
