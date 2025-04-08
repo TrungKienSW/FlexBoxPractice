@@ -173,3 +173,9 @@ body {
     margin-top: auto;
     flex-shrink: 0;
 }
+
+/* ####################################################################################################################### */
+/* Fix trường hợp người dùng nhập tên title là các chữ dính nhau dài nó sẽ xuống dòng cho mik khi hết độ dài dùng word-break ví dụ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.card-title {
+    word-break: break-all;
+}
