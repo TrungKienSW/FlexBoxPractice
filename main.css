@@ -45,6 +45,9 @@ body {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    flex-shrink: 0;
+    /* dòng này cố định kích thước không bị co lại khi dàn flex box*/
+
 }
 
 .card-top {
@@ -73,7 +76,7 @@ body {
 .card-user-info {
     padding-left: 20px;
     flex: 1;
-    /* dòng này để thẻ này có chiếm hết toàn bộ diện tích còn lại trong flex box */
+    /* dòng này để thẻ này có chiếm hết toàn bộ diện tích còn lại trong flex box phải có flex-shrink phía trên card-user-avatar */
 }
 
 .card-user-top {
@@ -110,6 +113,7 @@ body {
 .card-live {
     color: white;
     background-color: red;
+    font-size: 15px;
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -125,4 +129,16 @@ body {
     font-weight: 500;
     color: #999;
 
+}
+
+/* Fix độ dài của card-content bằng nhau giả sử trong trường hợp .card-title có nội dung dài khác nhau độ dài của mỗi card cũng sẽ bị khác nhau */
+/* Nếu không fix thì thêm background-color vào card-content và xóa flex: 1 sẽ thấy phải(phải thêm dixplay: flex ở card thì flex: 1 ở dưới mới hoạt động*/
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    /* background-color: #20e35a; */
+    flex: 1;
 }
