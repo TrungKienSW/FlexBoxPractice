@@ -26,9 +26,13 @@ body {
 }
 
 .cards {
+    --spacing: 30px;
+    --columns: 4;
+    /* 2 dòng trên chỉ là khai báo biến để dùng thoi */
     display: flex;
     /*Khi dùng display: flex, giá trị mặc định của align-items: stretch; nên nó sẽ làm cho các cột cao bằng nhau */
-    margin-left: -30px;
+    /* margin-left: -30px; */
+    margin-left: calc(-1 * var(--spacing));
     /* dòng này để căn đều hơn cho cái card đầu tiên */
 }
 
@@ -36,9 +40,9 @@ body {
     border-radius: 20px;
     overflow: hidden;
     background-color: white;
-    width: calc(25% - 30px);
-    /* Dòng này để chia các card mỗi card chiếm vị trí đều nhau trên màn hình do chúng ta có 4 card trừ đi 30px của margin left */
-    margin-left: 30px;
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    /* Dòng này để chia các card mỗi card chiếm vị trí đều nhau trên màn hình do chúng ta có 4 card trừ đi --spacing của margin left */
+    margin-left: var(--spacing);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
